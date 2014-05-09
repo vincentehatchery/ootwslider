@@ -1,0 +1,124 @@
+/*
+ * Out of This World Slider
+ *
+ * Author	: Vincent Alcantara (vincent@ehatchery.com.au)
+ * Date 	: 9 May 2014
+ * Details	: Simple jQuery Slider
+ *
+ * Format
+ * <div>
+ *		<div class="ootw-wrapper">
+ *			<div class="ootw-viewport">
+ *				<ul class="ootwslider">
+ *					<li><img src="/static/images/320x480.jpg"></li
+ *					><li><img src="/static/images/640x428b.jpg"></li
+ *					><li><img src="/static/images/320x569.jpg"></li
+ *					><li><img src="/static/images/640x428c.jpg"></li
+ *					><li><img src="/static/images/640x428d.jpg"></li
+ *					><li><img src="/static/images/320x569.jpg"></li
+ *					><li><img src="/static/images/640x428a.jpg"</li>
+ *				</ul>
+ *			</div>
+ *			<div class="ootw-controls">
+ 			</div>
+ *		</div>			
+ *	</div>
+ *
+ * 1. Reset settings
+ *
+ */
+
+/* 
+ * 1. Reset settings
+ * 2. Slider Style
+ * 3. Previous/ Next Button
+ */
+.ootw-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+	*zoom: 1;
+}
+
+/* 
+.ootw-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+*/
+
+/*
+ * 2. Slider Style
+ */
+
+.ootw-wrapper .ootw-viewport {
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border: solid #fff 5px;
+	/*left: -5px;*/
+	background: #fff;
+}
+
+.ootw-viewport {
+	width: 100%;
+	overflow: hidden;
+	padding:0;
+}
+
+
+ /*
+  * 3. Controls: Previous/ Next Button
+  */
+
+.ootw-wrapper .ootw-controls, .ootw-controls-prev-next {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+.ootw-controls .ootw-prev, .ootw-controls .ootw-next {
+	display: inline;
+	padding:15px;
+}
+
+.ootw-controls .ootw-prev{
+	background: url(/static/images/previous.png) no-repeat;
+}
+.ootw-controls .ootw-next {
+	background: url(/static/images/next.png) no-repeat;
+	float: right;
+	margin-top: -10px;
+}
+
+
+
+.ootwslider {
+	width: 100%; /*temp*/
+	height: 400px; /*temp*/
+	white-space: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.ootwslider li {
+	height: 300px; /*temp*/
+	list-style: none;
+	display: inline;
+	
+}
+
+.ootwslider li img {
+	height: 100%;
+}
+
+/*#previousSlide {
+	display: block;
+	border: 1px red solid;
+}
+
+
+#nextSlide {
+	display: block;
+	border: 1px blue solid;
+}
+*/
